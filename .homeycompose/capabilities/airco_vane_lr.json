@@ -1,0 +1,19 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Horizontal vane"
+  },
+  "icon": "/assets/capabilities/airco_vane_lr.svg",
+  "getable": true,
+  "setable": true,
+  "values": [
+    { "id": "0", "title": { "en": "Auto" } },
+    { "id": "1", "title": { "en": "Left-left" } },
+    { "id": "2", "title": { "en": "Left-middle" } },
+    { "id": "3", "title": { "en": "Middle-middle" } },
+    { "id": "4", "title": { "en": "Middle-right" } },
+    { "id": "5", "title": { "en": "Right-right" } },
+    { "id": "6", "title": { "en": "Left-right" } },
+    { "id": "7", "title": { "en": "Right-left" } }
+  ]
+}

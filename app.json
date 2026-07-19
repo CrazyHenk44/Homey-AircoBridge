@@ -1,0 +1,364 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.airco.bridge",
+  "name": {
+    "en": "Airco Bridge"
+  },
+  "version": "1.0.0",
+  "sdk": 3,
+  "category": "climate",
+  "brandColor": "#0f172a",
+  "author": {
+    "name": "Tom Albers",
+    "website": "https://github.com/CrazyHenk44"
+  },
+  "description": {
+    "en": "Connect Homey to the existing Airco HTTP bridge."
+  },
+  "compatibility": ">=12.2.0",
+  "platforms": [
+    "local"
+  ],
+  "homepage": "https://github.com/CrazyHenk44/Homey-AircoBridge",
+  "support": "https://github.com/CrazyHenk44/Homey-AircoBridge/issues",
+  "source": "https://github.com/CrazyHenk44/Homey-AircoBridge",
+  "bugs": {
+    "url": "https://github.com/CrazyHenk44/Homey-AircoBridge/issues"
+  },
+  "images": {
+    "small": "assets/images/small.png",
+    "large": "assets/images/large.png",
+    "xlarge": "assets/images/xlarge.png"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Airco"
+      },
+      "class": "thermostat",
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "drivers/airco/assets/images/small.png",
+        "large": "drivers/airco/assets/images/large.png",
+        "xlarge": "drivers/airco/assets/images/xlarge.png"
+      },
+      "capabilities": [
+        "onoff",
+        "measure_temperature",
+        "target_temperature",
+        "thermostat_mode",
+        "alarm_generic",
+        "measure_power",
+        "meter_power",
+        "airco_fan_mode",
+        "airco_vane_ud",
+        "airco_vane_lr",
+        "airco_indoor_temperature",
+        "airco_outdoor_temperature",
+        "airco_electric",
+        "airco_error_code",
+        "airco_entrust",
+        "airco_vacant_property",
+        "airco_self_clean_operation"
+      ],
+      "pair": [
+        {
+          "id": "start",
+          "name": {
+            "en": "Connect"
+          },
+          "navigation": {
+            "next": "list_devices"
+          }
+        },
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "name": {
+            "en": "Select device"
+          },
+          "navigation": {
+            "prev": "start",
+            "next": "add_devices"
+          },
+          "options": {
+            "singular": true
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices",
+          "name": {
+            "en": "Add device"
+          }
+        }
+      ],
+      "capabilitiesOptions": {
+        "thermostat_mode": {
+          "values": [
+            {
+              "id": "auto",
+              "title": {
+                "en": "Auto"
+              }
+            },
+            {
+              "id": "cool",
+              "title": {
+                "en": "Cool"
+              }
+            },
+            {
+              "id": "heat",
+              "title": {
+                "en": "Heat"
+              }
+            },
+            {
+              "id": "dry",
+              "title": {
+                "en": "Dry"
+              }
+            },
+            {
+              "id": "fan",
+              "title": {
+                "en": "Fan"
+              }
+            },
+            {
+              "id": "off",
+              "title": {
+                "en": "Off"
+              }
+            }
+          ]
+        },
+        "measure_power": {
+          "isApproximated": true
+        },
+        "meter_power": {
+          "isApproximated": true
+        }
+      },
+      "id": "airco"
+    }
+  ],
+  "capabilities": {
+    "airco_electric": {
+      "type": "number",
+      "title": {
+        "en": "Electric"
+      },
+      "icon": "/assets/capabilities/airco_electric.svg",
+      "getable": true,
+      "setable": false
+    },
+    "airco_entrust": {
+      "type": "boolean",
+      "title": {
+        "en": "3D auto"
+      },
+      "icon": "/assets/capabilities/airco_entrust.svg",
+      "getable": true,
+      "setable": true
+    },
+    "airco_error_code": {
+      "type": "string",
+      "title": {
+        "en": "Error code"
+      },
+      "icon": "/assets/capabilities/airco_error_code.svg",
+      "getable": true,
+      "setable": false
+    },
+    "airco_fan_mode": {
+      "type": "enum",
+      "title": {
+        "en": "Airco fan mode"
+      },
+      "icon": "/assets/capabilities/airco_fan_mode.svg",
+      "getable": true,
+      "setable": true,
+      "values": [
+        {
+          "id": "auto",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "lowest",
+          "title": {
+            "en": "Lowest"
+          }
+        },
+        {
+          "id": "low",
+          "title": {
+            "en": "Low"
+          }
+        },
+        {
+          "id": "medium",
+          "title": {
+            "en": "Medium"
+          }
+        },
+        {
+          "id": "high",
+          "title": {
+            "en": "High"
+          }
+        },
+        {
+          "id": "highest",
+          "title": {
+            "en": "Highest"
+          }
+        }
+      ]
+    },
+    "airco_indoor_temperature": {
+      "type": "number",
+      "title": {
+        "en": "Indoor temperature"
+      },
+      "icon": "/assets/capabilities/airco_indoor_temperature.svg",
+      "getable": true,
+      "setable": false
+    },
+    "airco_outdoor_temperature": {
+      "type": "number",
+      "title": {
+        "en": "Outdoor temperature"
+      },
+      "icon": "/assets/capabilities/airco_outdoor_temperature.svg",
+      "getable": true,
+      "setable": false
+    },
+    "airco_self_clean_operation": {
+      "type": "boolean",
+      "title": {
+        "en": "Self clean operation"
+      },
+      "icon": "/assets/capabilities/airco_self_clean_operation.svg",
+      "getable": true,
+      "setable": false
+    },
+    "airco_vacant_property": {
+      "type": "boolean",
+      "title": {
+        "en": "Vacant property"
+      },
+      "icon": "/assets/capabilities/airco_vacant_property.svg",
+      "getable": true,
+      "setable": true
+    },
+    "airco_vane_lr": {
+      "type": "enum",
+      "title": {
+        "en": "Horizontal vane"
+      },
+      "icon": "/assets/capabilities/airco_vane_lr.svg",
+      "getable": true,
+      "setable": true,
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "Left-left"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Left-middle"
+          }
+        },
+        {
+          "id": "3",
+          "title": {
+            "en": "Middle-middle"
+          }
+        },
+        {
+          "id": "4",
+          "title": {
+            "en": "Middle-right"
+          }
+        },
+        {
+          "id": "5",
+          "title": {
+            "en": "Right-right"
+          }
+        },
+        {
+          "id": "6",
+          "title": {
+            "en": "Left-right"
+          }
+        },
+        {
+          "id": "7",
+          "title": {
+            "en": "Right-left"
+          }
+        }
+      ]
+    },
+    "airco_vane_ud": {
+      "type": "enum",
+      "title": {
+        "en": "Vertical vane"
+      },
+      "icon": "/assets/capabilities/airco_vane_ud.svg",
+      "getable": true,
+      "setable": true,
+      "values": [
+        {
+          "id": "0",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "1",
+          "title": {
+            "en": "Highest"
+          }
+        },
+        {
+          "id": "2",
+          "title": {
+            "en": "Middle"
+          }
+        },
+        {
+          "id": "3",
+          "title": {
+            "en": "Normal"
+          }
+        },
+        {
+          "id": "4",
+          "title": {
+            "en": "Lowest"
+          }
+        }
+      ]
+    }
+  }
+}

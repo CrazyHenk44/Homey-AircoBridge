@@ -1,0 +1,9 @@
+{
+  "type": "string",
+  "title": {
+    "en": "Error code"
+  },
+  "icon": "/assets/capabilities/airco_error_code.svg",
+  "getable": true,
+  "setable": false
+}

@@ -1,0 +1,9 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Electric"
+  },
+  "icon": "/assets/capabilities/airco_electric.svg",
+  "getable": true,
+  "setable": false
+}

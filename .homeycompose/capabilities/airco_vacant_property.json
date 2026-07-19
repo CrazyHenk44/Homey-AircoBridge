@@ -1,0 +1,9 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "Vacant property"
+  },
+  "icon": "/assets/capabilities/airco_vacant_property.svg",
+  "getable": true,
+  "setable": true
+}

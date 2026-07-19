@@ -1,0 +1,9 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Outdoor temperature"
+  },
+  "icon": "/assets/capabilities/airco_outdoor_temperature.svg",
+  "getable": true,
+  "setable": false
+}

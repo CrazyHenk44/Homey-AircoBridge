@@ -1,0 +1,9 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Indoor temperature"
+  },
+  "icon": "/assets/capabilities/airco_indoor_temperature.svg",
+  "getable": true,
+  "setable": false
+}

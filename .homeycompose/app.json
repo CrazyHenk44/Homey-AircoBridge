@@ -1,0 +1,32 @@
+{
+  "id": "com.airco.bridge",
+  "name": {
+    "en": "Airco Bridge"
+  },
+  "version": "1.0.0",
+  "sdk": 3,
+  "category": "climate",
+  "brandColor": "#0f172a",
+  "author": {
+    "name": "Tom Albers",
+    "website": "https://github.com/CrazyHenk44"
+  },
+  "description": {
+    "en": "Connect Homey to the existing Airco HTTP bridge."
+  },
+  "compatibility": ">=12.2.0",
+  "platforms": [
+    "local"
+  ],
+  "homepage": "https://github.com/CrazyHenk44/Homey-AircoBridge",
+  "support": "https://github.com/CrazyHenk44/Homey-AircoBridge/issues",
+  "source": "https://github.com/CrazyHenk44/Homey-AircoBridge",
+  "bugs": {
+    "url": "https://github.com/CrazyHenk44/Homey-AircoBridge/issues"
+  },
+  "images": {
+    "small": "assets/images/small.png",
+    "large": "assets/images/large.png",
+    "xlarge": "assets/images/xlarge.png"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "type": "enum",
+  "title": {
+    "en": "Airco fan mode"
+  },
+  "icon": "/assets/capabilities/airco_fan_mode.svg",
+  "getable": true,
+  "setable": true,
+  "values": [
+    {
+      "id": "auto",
+      "title": {
+        "en": "Auto"
+      }
+    },
+    {
+      "id": "lowest",
+      "title": {
+        "en": "Lowest"
+      }
+    },
+    {
+      "id": "low",
+      "title": {
+        "en": "Low"
+      }
+    },
+    {
+      "id": "medium",
+      "title": {
+        "en": "Medium"
+      }
+    },
+    {
+      "id": "high",
+      "title": {
+        "en": "High"
+      }
+    },
+    {
+      "id": "highest",
+      "title": {
+        "en": "Highest"
+      }
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Airco Bridge pairing</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #64748b;
+      --accent: #0ea5e9;
+      --border: #dbe4ee;
+      --danger: #dc2626;
+    }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #eef6ff 0%, #f5f7fb 40%, #f5f7fb 100%);
+      color: var(--text);
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+    }
+    h1 {
+      margin: 0 0 6px;
+      font-size: 28px;
+    }
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    input {
+      width: 100%;
+      box-sizing: border-box;
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+    button {
+      border: 0;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 14px;
+      padding: 12px 16px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button.secondary {
+      background: #e2e8f0;
+      color: var(--text);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 0;
+      display: grid;
+      gap: 10px;
+    }
+    li {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .muted {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .error {
+      color: var(--danger);
+      margin-top: 12px;
+      white-space: pre-wrap;
+    }
+    .row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="card">
+      <h1>Airco Bridge</h1>
+      <p>Enter the bridge base URL, validate the bridge, then continue to Homey’s built-in device selection step.</p>
+
+      <label for="baseUrl">Bridge base URL</label>
+      <input id="baseUrl" type="text" value="http://192.168.1.50:3000" placeholder="http://192.168.1.50:3000">
+
+      <div class="row">
+        <button id="loadDevices" type="button">Continue</button>
+        <button id="retry" class="secondary" type="button">Retry</button>
+      </div>
+
+      <div id="status" class="muted" style="margin-top: 12px;">Waiting for bridge URL.</div>
+      <div id="error" class="error"></div>
+      <ul id="deviceList"></ul>
+    </div>
+  </main>
+  <script src="start.js"></script>
+</body>
+</html>

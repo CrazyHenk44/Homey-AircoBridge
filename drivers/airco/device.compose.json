@@ -1,0 +1,95 @@
+{
+  "name": {
+    "en": "Airco"
+  },
+  "class": "thermostat",
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
+  "capabilities": [
+    "onoff",
+    "measure_temperature",
+    "target_temperature",
+    "thermostat_mode",
+    "alarm_generic",
+    "measure_power",
+    "meter_power",
+    "airco_fan_mode",
+    "airco_vane_ud",
+    "airco_vane_lr",
+    "airco_indoor_temperature",
+    "airco_outdoor_temperature",
+    "airco_electric",
+    "airco_error_code",
+    "airco_entrust",
+    "airco_vacant_property",
+    "airco_self_clean_operation"
+  ],
+  "settings": [
+    {
+      "id": "baseUrl",
+      "type": "text",
+      "label": {
+        "en": "Bridge base URL"
+      }
+    },
+    {
+      "id": "deviceId",
+      "type": "text",
+      "label": {
+        "en": "Bridge device ID"
+      }
+    }
+  ],
+  "capabilitiesOptions": {
+    "thermostat_mode": {
+      "values": [
+        {
+          "id": "auto",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "cool",
+          "title": {
+            "en": "Cool"
+          }
+        },
+        {
+          "id": "heat",
+          "title": {
+            "en": "Heat"
+          }
+        },
+        {
+          "id": "dry",
+          "title": {
+            "en": "Dry"
+          }
+        },
+        {
+          "id": "fan",
+          "title": {
+            "en": "Fan"
+          }
+        },
+        {
+          "id": "off",
+          "title": {
+            "en": "Off"
+          }
+        }
+      ]
+    },
+    "measure_power": {
+      "isApproximated": true
+    },
+    "meter_power": {
+      "isApproximated": true
+    }
+  }
+}

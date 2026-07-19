@@ -1,0 +1,116 @@
+{
+  "name": {
+    "en": "Airco"
+  },
+  "class": "thermostat",
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
+  "images": {
+    "small": "drivers/airco/assets/images/small.png",
+    "large": "drivers/airco/assets/images/large.png",
+    "xlarge": "drivers/airco/assets/images/xlarge.png"
+  },
+  "capabilities": [
+    "onoff",
+    "measure_temperature",
+    "target_temperature",
+    "thermostat_mode",
+    "alarm_generic",
+    "measure_power",
+    "meter_power",
+    "airco_fan_mode",
+    "airco_vane_ud",
+    "airco_vane_lr",
+    "airco_indoor_temperature",
+    "airco_outdoor_temperature",
+    "airco_electric",
+    "airco_error_code",
+    "airco_entrust",
+    "airco_vacant_property",
+    "airco_self_clean_operation"
+  ],
+  "pair": [
+    {
+      "id": "start",
+      "name": {
+        "en": "Connect"
+      },
+      "navigation": {
+        "next": "list_devices"
+      }
+    },
+    {
+      "id": "list_devices",
+      "template": "list_devices",
+      "name": {
+        "en": "Select device"
+      },
+      "navigation": {
+        "prev": "start",
+        "next": "add_devices"
+      },
+      "options": {
+        "singular": true
+      }
+    },
+    {
+      "id": "add_devices",
+      "template": "add_devices",
+      "name": {
+        "en": "Add device"
+      }
+    }
+  ],
+  "capabilitiesOptions": {
+    "thermostat_mode": {
+      "values": [
+        {
+          "id": "auto",
+          "title": {
+            "en": "Auto"
+          }
+        },
+        {
+          "id": "cool",
+          "title": {
+            "en": "Cool"
+          }
+        },
+        {
+          "id": "heat",
+          "title": {
+            "en": "Heat"
+          }
+        },
+        {
+          "id": "dry",
+          "title": {
+            "en": "Dry"
+          }
+        },
+        {
+          "id": "fan",
+          "title": {
+            "en": "Fan"
+          }
+        },
+        {
+          "id": "off",
+          "title": {
+            "en": "Off"
+          }
+        }
+      ]
+    },
+    "measure_power": {
+      "isApproximated": true
+    },
+    "meter_power": {
+      "isApproximated": true
+    }
+  }
+}

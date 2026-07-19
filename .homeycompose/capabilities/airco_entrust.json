@@ -1,0 +1,9 @@
+{
+  "type": "boolean",
+  "title": {
+    "en": "3D auto"
+  },
+  "icon": "/assets/capabilities/airco_entrust.svg",
+  "getable": true,
+  "setable": true
+}
