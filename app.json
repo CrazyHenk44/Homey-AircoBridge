@@ -4,7 +4,7 @@
   "name": {
     "en": "Airco Bridge"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "sdk": 3,
   "category": "climate",
   "brandColor": "#38bdf8",
@@ -22,6 +22,7 @@
   "homepage": "https://github.com/CrazyHenk44/Homey-AircoBridge",
   "support": "https://github.com/CrazyHenk44/Homey-AircoBridge/issues",
   "source": "https://github.com/CrazyHenk44/Homey-AircoBridge",
+  "homeyCommunityTopicId": 157487,
   "bugs": {
     "url": "https://github.com/CrazyHenk44/Homey-AircoBridge/issues"
   },

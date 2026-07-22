@@ -1,6 +1,6 @@
 {
   "name": "airco-homey",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": true,
   "description": "Homey SDK v3 app for the Airco HTTP bridge",
   "license": "MIT",
